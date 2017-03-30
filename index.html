@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>X:O:X</title>
+  </head>
+  <body>
+    <style>
+      .grid {
+        width: 600px;
+      }
+      .section {
+        display: flex;
+      }
+      .square {
+        border: 1px solid;
+        height: 4em;
+        width: 4em;
+        text-align: center;
+        font-size: 1.5em;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-transform: uppercase;
+      }
+      .top > .square {
+        border-top:none;
+      }
+      .bottom > .square {
+        border-bottom:none;
+      }
+      .section > .square:first-child{
+        border-left:none;
+      }
+      .section > .square:last-child {
+        border-right:none;
+      }
+    </style>
+    <h1>X:O:X</h1>
+    <div class="grid">
+      <div class="top section">
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+      </div>
+      <div class="mid section">
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+      </div>
+      <div class="bottom section">
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+      </div>
+    </div>
+    <script src="assets/bundle.js"></script>
+  </body>
+</html>
